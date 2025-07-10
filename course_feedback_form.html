@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A survey form to collect feedback on web development courses." />
+    <meta property="og:title" content="Web Development Survey Form" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://cdn.freecodecamp.org/curriculum/universal/fcc_meta_1920X1080-indigo.png" />
+    <meta property="og:url" content="https://www.freecodecamp.org" />
+    <meta property="og:description" content="A survey form to collect feedback on web development courses." />
+    <meta property="og:site_name" content="FreeCodeCamp" />
+    <meta property="og:locale" content="en_US" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <main> <!-- Main content area -->
+        <form method="POST" action="https://formsubmit.co/sloolana2@gmail.com">
+            <h1 id="title">Web Development Survey</h1>
+            <p id="description">
+                Thank you for taking the time to help us improve our courses and resources.
+            </p>
+
+        <form id="survey-form">
+        <!-- Name Input -->
+        <label id="name-label" for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required /><br /><br />
+
+        <!-- Email Input -->
+        <label id="email-label" for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email address" required /><br /><br />
+
+        <!-- Number Input -->
+        <label id="number-label" for="number">Age (13–120):</label>
+        <input type="number" id="number" name="age" min="13" max="120" placeholder="Enter your age" /><br /><br />
+
+        <!-- Dropdown -->
+        <label for="dropdown">Which best describes your role?</label>
+        <select id="dropdown" name="role">
+            <option value="">Select one</option>
+            <option value="student">Student</option>
+            <option value="developer">Developer</option>
+        </select><br /><br />
+
+        <!-- Radio Buttons -->
+        <p>Would you recommend this course?</p>
+        <label>
+            <input type="radio" name="recommend" value="yes" /> Yes
+        </label>
+        <label>
+            <input type="radio" name="recommend" value="no" /> No
+        </label><br /><br />
+
+        <!-- Checkboxes -->
+        <p>What topics are you interested in?</p>
+        <label>
+            <input type="checkbox" name="topics" value="html" /> HTML
+        </label>
+        <label>
+            <input type="checkbox" name="topics" value="css" /> CSS
+        </label>
+        <label>
+            <input type="checkbox" name="topics" value="javascript" /> JavaScript
+        </label><br /><br />
+
+        <!-- Textarea -->
+        <label for="comments">Additional Comments:</label><br />
+        <textarea id="comments" name="comments" rows="4" cols="50"
+            placeholder="Let us know what you think..."></textarea><br /><br />
+
+        <!-- Submit Button -->
+        <button type="submit" id="submit">Submit</button>
+    </form>
+    </main>
+</body>
+
+</html>

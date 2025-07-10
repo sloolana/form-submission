@@ -1,0 +1,155 @@
+/* Base Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+h1#title {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #2c3e50;
+  font-size: 2rem;
+}
+
+#description {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Form Styles */
+form#survey-form {
+  background: #fff;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 25px 30px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+p {
+  margin: 15px 0 10px;
+  font-weight: 600;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+button#submit {
+  display: block;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+button#submit:hover {
+  background-color: #2980b9;
+}
+
+/* Responsive Layout */
+@media (max-width: 640px) {
+  form#survey-form {
+    padding: 20px;
+  }
+
+  h1#title {
+    font-size: 1.6rem;
+  }
+}
+
+/* 🌙 Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+
+  form#survey-form {
+    background-color: #1e1e1e;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  select,
+  textarea {
+    background-color: #2b2b2b;
+    border: 1px solid #555;
+    color: #f1f1f1;
+  }
+
+  input:focus,
+  textarea:focus,
+  select:focus {
+    border-color: #00bcd4;
+  }
+
+  button#submit {
+    background-color: #00bcd4;
+    color: #000;
+  }
+
+  button#submit:hover {
+    background-color: #00acc1;
+  }
+}
+
